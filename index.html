@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Live TV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container ">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container">
+                        <a class="navbar-brand" href="#"><img src="./img/Live.TV.svg" alt=""></a>
+                        <button class="navbar-toggler bg-white justify-content-start" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon bg-white"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <div class="bar w-100">
+                                <ul class="navbar-nav d-flex justify-content-between">
+                                    <div class="left d-flex">
+
+                                        <li class="nav-item">
+                                            <a class="nav-link active text-light" aria-current="page"
+                                                href="#">Фильмы</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-light" href="#">Сериалы</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-light" href="#">Мультфильмы</a>
+                                        </li>
+                                        <li class="nav-item text-light">
+                                            <a class="nav-link text-light">Новинки</a>
+                                        </li>
+
+
+                                    </div>
+
+                                    <div class="right d-flex">
+                                        <li class="nav-item text-light d-flex align-items-center vot-tak-vot">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="15" cy="15" r="13.5" stroke="#F0F0F0" />
+                                                <path
+                                                    d="M19.0482 18.0737L22 21.0248L21.0248 22L18.0737 19.0482C16.9757 19.9285 15.6099 20.4072 14.2026 20.4052C10.7788 20.4052 8 17.6265 8 14.2026C8 10.7788 10.7788 8 14.2026 8C17.6265 8 20.4052 10.7788 20.4052 14.2026C20.4072 15.6099 19.9285 16.9757 19.0482 18.0737ZM17.6657 17.5624C18.5404 16.6629 19.0289 15.4572 19.0269 14.2026C19.0269 11.5369 16.8677 9.37836 14.2026 9.37836C11.5369 9.37836 9.37836 11.5369 9.37836 14.2026C9.37836 16.8677 11.5369 19.0269 14.2026 19.0269C15.4572 19.0289 16.6629 18.5404 17.5624 17.6657L17.6657 17.5624Z"
+                                                    fill="#F0F0F0" />
+                                            </svg>
+                                            <a class="nav-link text-light">Поиск</a>
+                                        </li>
+                                        <li class="nav-item text-light d-flex align-items-center vot-tak-vot">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="15" cy="15" r="13.5" stroke="#F0F0F0" />
+                                                <path
+                                                    d="M20.3333 22H9.66667C9.48986 22 9.32029 21.9263 9.19526 21.795C9.07024 21.6637 9 21.4857 9 21.3V8.7C9 8.51435 9.07024 8.3363 9.19526 8.20503C9.32029 8.07375 9.48986 8 9.66667 8H20.3333C20.5101 8 20.6797 8.07375 20.8047 8.20503C20.9298 8.3363 21 8.51435 21 8.7V21.3C21 21.4857 20.9298 21.6637 20.8047 21.795C20.6797 21.9263 20.5101 22 20.3333 22ZM19.6667 20.6V9.4H10.3333V20.6H19.6667ZM13 10.8V12.2C13 12.757 13.2107 13.2911 13.5858 13.6849C13.9609 14.0788 14.4696 14.3 15 14.3C15.5304 14.3 16.0391 14.0788 16.4142 13.6849C16.7893 13.2911 17 12.757 17 12.2V10.8H18.3333V12.2C18.3333 13.1283 17.9821 14.0185 17.357 14.6749C16.7319 15.3313 15.8841 15.7 15 15.7C14.1159 15.7 13.2681 15.3313 12.643 14.6749C12.0179 14.0185 11.6667 13.1283 11.6667 12.2V10.8H13Z"
+                                                    fill="#F0F0F0" />
+                                            </svg>
+                                            <a class="nav-link text-light">Мои покупки</a>
+                                        </li>
+
+                                        <li class="nav-item text-light d-flex align-items-center vot-tak-vot">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="15" cy="15" r="13.5" stroke="#F0F0F0" />
+                                                <path
+                                                    d="M10 22C10 20.5855 10.5268 19.229 11.4645 18.2288C12.4021 17.2286 13.6739 16.6667 15 16.6667C16.3261 16.6667 17.5979 17.2286 18.5355 18.2288C19.4732 19.229 20 20.5855 20 22H18.75C18.75 20.9391 18.3549 19.9217 17.6517 19.1716C16.9484 18.4214 15.9946 18 15 18C14.0054 18 13.0516 18.4214 12.3483 19.1716C11.6451 19.9217 11.25 20.9391 11.25 22H10ZM15 16C12.9281 16 11.25 14.21 11.25 12C11.25 9.79 12.9281 8 15 8C17.0719 8 18.75 9.79 18.75 12C18.75 14.21 17.0719 16 15 16ZM15 14.6667C16.3812 14.6667 17.5 13.4733 17.5 12C17.5 10.5267 16.3812 9.33333 15 9.33333C13.6187 9.33333 12.5 10.5267 12.5 12C12.5 13.4733 13.6187 14.6667 15 14.6667Z"
+                                                    fill="#F0F0F0" />
+                                            </svg>
+                                            <a class="nav-link text-light">Мой аккаунт</a>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </div>
+                            <!-- <div class="knopki d-flex justify-content-around">
+                                
+                            </div> -->
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="nn">
+            <div class="container p-5 d-flex align-items-end ">
+                <div class="film text-light w-50">
+                    <h3>НЕЗНАКОМЕЦ</h3>
+                    <div class="infa d-flex flex-row justify-content-between">
+                        <p>8.9</p>
+                        <p>2020, США</p>
+                        <p>Трейлер, драма</p>
+                        <p>113 мин.</p>
+                        <p>18+</p>
+                    </div>
+                    <p>Софи была счастлива в браке со своим мужем Генри. Пока однажды ей не пришло анонимное письмо,
+                        предупреждение, что ей нужно бежать от мужа. Пытаясь разгадать эту загадку, Софи впадает в ужас,
+                        ведь Генри оказывается совсем не тем человеком, которого она знает…</p>
+                    <div class="row">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-primary ps-9 pe-9 w-100">
+                                <svg width="10" height="14" viewBox="0 0 10 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.23707 7L1.72434 3.05577V10.9442L7.23707 7ZM9.80807 7.38489L0.669908 13.9225C0.604991 13.9689 0.529572 13.9955 0.451685 13.9995C0.373797 14.0035 0.296357 13.9847 0.227613 13.9452C0.158868 13.9057 0.101395 13.847 0.0613122 13.7752C0.0212297 13.7034 4.0281e-05 13.6213 0 13.5376V0.462373C4.0281e-05 0.378694 0.0212297 0.296593 0.0613122 0.224816C0.101395 0.153038 0.158868 0.094271 0.227613 0.0547743C0.296357 0.0152777 0.373797 -0.00346992 0.451685 0.000528517C0.529572 0.00452696 0.604991 0.0311219 0.669908 0.0774802L9.80807 6.61511C9.86711 6.65735 9.91552 6.71459 9.949 6.78173C9.98248 6.84888 10 6.92385 10 7C10 7.07615 9.98248 7.15113 9.949 7.21827C9.91552 7.28541 9.86711 7.34265 9.80807 7.38489Z"
+                                        fill="#F0F0F0" />
+                                </svg>
+                                Смотреть бесплатно</button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn  ps-4 pe-4 w-100">
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.1818 3.25L13.4992 0.96875C13.5469 0.93591 13.6028 0.916561 13.661 0.912813C13.7191 0.909065 13.7772 0.921063 13.8288 0.947497C13.8805 0.973931 13.9238 1.01379 13.954 1.06272C13.9841 1.11165 14.0001 1.16779 14 1.225V8.775C14.0001 8.83221 13.9841 8.88835 13.954 8.93728C13.9238 8.98621 13.8805 9.02607 13.8288 9.0525C13.7772 9.07894 13.7191 9.09093 13.661 9.08719C13.6028 9.08344 13.5469 9.06409 13.4992 9.03125L10.1818 6.75V9.375C10.1818 9.54076 10.1148 9.69973 9.99543 9.81694C9.87609 9.93415 9.71423 10 9.54545 10H0.636364C0.467589 10 0.305728 9.93415 0.186387 9.81694C0.0670452 9.69973 0 9.54076 0 9.375V0.625C0 0.45924 0.0670452 0.300269 0.186387 0.183058C0.305728 0.0658481 0.467589 0 0.636364 0H9.54545C9.71423 0 9.87609 0.0658481 9.99543 0.183058C10.1148 0.300269 10.1818 0.45924 10.1818 0.625V3.25ZM10.1818 5.22438L12.7273 6.97438V3.025L10.1818 4.775V5.22438ZM1.27273 1.25V8.75H8.90909V1.25H1.27273Z"
+                                        fill="#F0F0F0" />
+                                </svg>
+                                Трейлер</button>
+                        </div>
+                        <div class="col-1">
+                            <button type="button" class="btn  ps-10 pe-4 w-100">
+                                <svg width="11" height="14" viewBox="0 0 11 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.6875 0H10.3125C10.4948 0 10.6697 0.0714504 10.7986 0.198633C10.9276 0.325815 11 0.498312 11 0.678175V13.6605C11.0001 13.7211 10.9837 13.7807 10.9525 13.8329C10.9213 13.8852 10.8765 13.9282 10.8227 13.9576C10.7689 13.9869 10.7082 14.0015 10.6467 13.9999C10.5853 13.9982 10.5254 13.9803 10.4734 13.948L5.5 10.8712L0.526625 13.9474C0.474628 13.9796 0.414829 13.9975 0.353445 13.9992C0.292061 14.0009 0.231334 13.9864 0.177578 13.9571C0.123821 13.9278 0.0789984 13.8848 0.0477694 13.8327C0.0165404 13.7805 4.56987e-05 13.7211 0 13.6605V0.678175C0 0.498312 0.072433 0.325815 0.201364 0.198633C0.330295 0.0714504 0.505164 0 0.6875 0ZM9.625 1.35635H1.375V11.822L5.5 9.27133L9.625 11.822V1.35635Z"
+                                        fill="#F0F0F0" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="film">
+            <div class="container d-flex ">
+                <div class="card m-3 text-light" style="width: 18rem;">
+                    <img src="./img/2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-text">Под водой</h4>
+                        <p class="card-text">Приключения, семейный</p>
+                    </div>
+                </div>
+                <div class="card m-3 text-light" style="width: 18rem;">
+                    <img src="./img/3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-text">Мгла</h4>
+                        <p class="card-text">Ужасы, триллер</p>
+                    </div>
+                </div>
+                <div class="card m-3 text-light" style="width: 18rem;">
+                    <img src="./img/4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-text">Охота</h4>
+                        <p class="card-text">Детектив, криминал, драма</p>
+                    </div>
+                </div>
+                <div class="card m-3 text-light" style="width: 18rem;">
+                    <img src="./img/5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-text">Синхронизация</h4>
+                        <p class="card-text">Триллер, драма</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="kosmos">
+            <div class="container p-5 d-flex align-items-center ">
+                <div class="film text-light w-50">
+                    <h3>Космическая подборка</h3>
+                    <p>100 лучших фильмов о космосе, других планетах и инопланетян. Рейтинг составлен на основании
+                        оценок и рецензий пользователей Live.TV.</p>
+                    <div class="row">
+                        <div class="col-5">
+                            <button type="button" class="btn btn-primary ps-9 pe-9 w-100">Смотреть подборку</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="besson">
+            <div class="container d-flex text-light">
+                <div class="text">
+                    <h3 class="open">ОТКРЫТИЕ НЕДЕЛИ</h3>
+                    <h2 class="name">БЕССОНИЦА</h2>
+                    <div class="info">
+                        <h3 class="chislo">7.8</h3>
+                        <h3>2021, США</h3>
+                        <h3>Драма, триллер</h3>
+                        <h3>98 мин</h3>
+                        <h3>16+</h3>
+                    </div>
+                    <h4 class="opis">Драма, в которой стерты все границы реальности<br>
+                        и вымысла. Потеряв сон, герой Метью Кросса потерял<br>
+                        себя и уже не понимает, что происходит по-настоящему,<br>
+                        а что является плодом его воображения.</h4>
+                    <h2 class="money">199 &#8381;</h2>
+                    <div class="row">
+                        <button class="col-6 text-light"><svg width="10" height="14" viewBox="0 0 10 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.23707 7L1.72434 3.05577V10.9442L7.23707 7ZM9.80807 7.38489L0.669908 13.9225C0.604991 13.9689 0.529572 13.9955 0.451685 13.9995C0.373797 14.0035 0.296357 13.9847 0.227613 13.9452C0.158868 13.9057 0.101395 13.847 0.0613122 13.7752C0.0212297 13.7034 4.0281e-05 13.6213 0 13.5376V0.462373C4.0281e-05 0.378694 0.0212297 0.296593 0.0613122 0.224816C0.101395 0.153038 0.158868 0.094271 0.227613 0.0547743C0.296357 0.0152777 0.373797 -0.00346992 0.451685 0.000528517C0.529572 0.00452696 0.604991 0.0311219 0.669908 0.0774802L9.80807 6.61511C9.86711 6.65735 9.91552 6.71459 9.949 6.78173C9.98248 6.84888 10 6.92385 10 7C10 7.07615 9.98248 7.15113 9.949 7.21827C9.91552 7.28541 9.86711 7.34265 9.80807 7.38489Z"
+                                    fill="#F0F0F0" />
+                            </svg>Купить и смотреть</button>
+                        <button class="col-4 text-light"><svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.1818 3.25L13.4992 0.96875C13.5469 0.93591 13.6028 0.916561 13.661 0.912813C13.7191 0.909065 13.7772 0.921063 13.8288 0.947497C13.8805 0.973931 13.9238 1.01379 13.954 1.06272C13.9841 1.11165 14.0001 1.16779 14 1.225V8.775C14.0001 8.83221 13.9841 8.88835 13.954 8.93728C13.9238 8.98621 13.8805 9.02607 13.8288 9.0525C13.7772 9.07894 13.7191 9.09093 13.661 9.08719C13.6028 9.08344 13.5469 9.06409 13.4992 9.03125L10.1818 6.75V9.375C10.1818 9.54076 10.1148 9.69973 9.99543 9.81694C9.87609 9.93415 9.71423 10 9.54545 10H0.636364C0.467589 10 0.305728 9.93415 0.186387 9.81694C0.0670452 9.69973 0 9.54076 0 9.375V0.625C0 0.45924 0.0670452 0.300269 0.186387 0.183058C0.305728 0.0658481 0.467589 0 0.636364 0H9.54545C9.71423 0 9.87609 0.0658481 9.99543 0.183058C10.1148 0.300269 10.1818 0.45924 10.1818 0.625V3.25ZM10.1818 5.22438L12.7273 6.97438V3.025L10.1818 4.775V5.22438ZM1.27273 1.25V8.75H8.90909V1.25H1.27273Z"
+                                    fill="#F0F0F0" />
+                            </svg>Трейлер</button>
+                        <button class="col-1"><svg width="11" height="14" viewBox="0 0 11 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.6875 0H10.3125C10.4948 0 10.6697 0.0714504 10.7986 0.198633C10.9276 0.325815 11 0.498312 11 0.678175V13.6605C11.0001 13.7211 10.9837 13.7807 10.9525 13.8329C10.9213 13.8852 10.8765 13.9282 10.8227 13.9576C10.7689 13.9869 10.7082 14.0015 10.6467 13.9999C10.5853 13.9982 10.5254 13.9803 10.4734 13.948L5.5 10.8712L0.526625 13.9474C0.474628 13.9796 0.414829 13.9975 0.353445 13.9992C0.292061 14.0009 0.231334 13.9864 0.177578 13.9571C0.123821 13.9278 0.0789984 13.8848 0.0477694 13.8327C0.0165404 13.7805 4.56987e-05 13.7211 0 13.6605V0.678175C0 0.498312 0.072433 0.325815 0.201364 0.198633C0.330295 0.0714504 0.505164 0 0.6875 0ZM9.625 1.35635H1.375V11.822L5.5 9.27133L9.625 11.822V1.35635Z"
+                                    fill="#F0F0F0" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="opisanie">
+                        <div class="h3 d-flex text-light">
+                            <h3>ОПИСАНИЕ</h3>
+                            <h3>ДЕТАЛИ</h3>
+                            <h3>ОТЗЫВЫ</h3>
+                        </div>
+
+                        <div class="text">
+                            <div class="line">
+                                <div class="text text1">
+                                    <h2 class="Sam">Самуэль уже забыл, когда высыпался последний раз.<br>
+                                        Он перестал понимать, где граница жизни, а где<br>
+                                        небытия. Но он пытается продолжать жить и<br>
+                                        работать, как ни в чем не бывало. Неожиданно в его<br>
+                                        жизни начали появляться необычные люди. На<br>
+                                        работе появился новый коллега, который общается<br>
+                                        только с ним. В доме появляется соседка, с которой<br>
+                                        у него закрутился роман. Самуэль продолжал жить и<br>
+                                        не обращал внимания на бессоницу.<br></h2>
+                                    <h2 class="poka">Пока однажды в его жизни начали появляться не<br>
+                                        только новые люди, но и те, кто уже давно покинул<br>
+                                        этот мир. Теперь Самуэль пытается понять, где<br>
+                                        реальность, кто из всех окружающих его людей настоящий.</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="foto d-flex flex-column">
+                    <div class="nameimg"></div>
+                    <div class="row2 d-flex justify-content-between">
+                        <div class="womanman p-0"></div>
+                        <div class="man p-0"></div>
+                    </div>
+                    <div class="row1 d-flex justify-content-between">
+                        <div class="manblack"></div>
+                        <div class="manroom"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tv">
+            <div class="container text-light">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="foto">
+                            <img src="./img/12.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h3>Live TV – это ваши любимые фильмы и сериалы в отличном качестве.</h3>
+                        <div class="text">
+                            <p>Эксклюзивные премьеры и любимые легендарные фильмы, под любое настроение и для зрителей
+                                всех возрастов и интересов. Лицензионное качество видео, отличная картинка, оригинальная
+                                озвучка, просмотр без рекламы на любом устройстве – все это доступно в видеосервисе Live
+                                TV.
+                                Оформите подписку и смотрите любое кино на 5 разных устройствах.</p>
+                        </div>
+                        <div class="stat d-flex flex-wrap">
+                            <div class="row1 w-50 ">
+                                <h4>40 млн</h4>
+                                <p>пользователей</p>
+                            </div>
+                            <div class="row1 w-50">
+                                <h4>100 +</h4>
+                                <p>эксклюзивных проектов</p>
+                            </div>
+                            <div class="row1 w-50">
+                                <h4>300 тысяч</h4>
+                                <p>фильмов и сериалов</p>
+                            </div>
+                            <div class="row1 w-50">
+                                <h4>2 млрд часов</h4>
+                                <p>просмтора за 2020 год</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pod">
+            <div class="container text-light">
+                <h2 class="oform">ОФОРМИТЕ ПОДПИСКУ</h2>
+                <h3 class="text">Получите полный доступ к каталогу Live. Безупречное качество<br>
+                    картинки и звука, одновременный просмотр на 5 устройствах,<br>
+                    отсутствие рекламы, загрузка на устройства для офлайн-доступа. </h3>
+                <div class="forma">
+                    <div class="frst">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Имя</label>
+                            <input type="text" class="form-control" name="name" id="name"
+                                aria-describedby="emailHelpId" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="tel" class="form-label">Телефон</label>
+                            <input type="tel" class="form-control" name="tel" id="tel" aria-describedby="emailHelpId" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="em" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" name="em" id="em" aria-describedby="emailHelpId" />
+                        </div>
+                        <h3 class="choice">Выберите тариф</h3>
+                        <div class="tarif d-flex">
+                            <div class="frst">
+                                <input checked type="radio" name="per" id="rad1">
+                                <label for="rad1">1 месяц</label>
+                            </div>
+                            <div class="scnd">
+                                <input type="radio" name="per" id="rad2">
+                                <label for="rad2">3 месяца</label>
+                            </div>
+                            <div class="thd">
+                                <input type="radio" name="per" id="rad3">
+                                <label for="rad3">6 месяцев</label>
+                            </div>
+                            <div class="frz">
+                                <input type="radio" name="per" id="rad4">
+                                <label for="rad4">12 месяцев</label>
+                            </div>
+                        </div>
+                        <div class="sogl">
+                            <input type="checkbox" id="check1">
+                            <label for="check1">Я согласен на обработку моих персональныз данных</label>
+                        </div>
+                        <button class="knop text-light align-items-center justify-content-center">Оформить
+                            подписку</button>
+                    </div>
+                    <div class="scnd">
+                        <div class="mones">
+                            <div class="money">
+                                <h3 class="small">1 месяц</h3>
+                                <h2 class="blue">199&#8381;</h2>
+                                <h3 class="small2">199&#8381;/месяц</h3>
+                            </div>
+                            <div class="money">
+                                <h3 class="small">3 месяца</h3>
+                                <h2 class="blue">529&#8381;</h2>
+                                <h3 class="small2">176&#8381;/месяц</h3>
+                            </div>
+                        </div>
+                        <div class="mones">
+                            <div class="money">
+                                <h3 class="small">6 месяцев</h3>
+                                <h2 class="blue">999&#8381;</h2>
+                                <h3 class="small2">166&#8381;/месяц</h3>
+                            </div>
+                            <div class="money">
+                                <h3 class="small">12 месяца</h3>
+                                <h2 class="blue">1790&#8381;</h2>
+                                <h3 class="small2">149&#8381;/месяц</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="footer">
+        <div class="container d-flex">
+            <div class="col-6 d-flex">
+                <div class="text1">
+                    <p>Live.TV&#169;2021 Все права защищены</p>
+                </div>
+                <div class="text">
+                    <p class="pol">Политика конфиденциальности</p>
+                </div>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+                <img src="./img/facebook.svg" alt="">
+                <img src="./img/instagram.svg" alt="">
+                <img src="./img/youtube.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
